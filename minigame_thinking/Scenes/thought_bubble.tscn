@@ -1,0 +1,98 @@
+[gd_scene load_steps=8 format=3 uid="uid://cw2me1fyf2g2q"]
+
+[ext_resource type="Material" uid="uid://cqmtf3lfm6y6s" path="res://minigame_thinking/Materials/thought.tres" id="1_2an3b"]
+[ext_resource type="Script" uid="uid://88o4cdqkim1y" path="res://minigame_thinking/Scripts/thought_bubble.gd" id="1_3js7x"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_uvv6b"]
+material = ExtResource("1_2an3b")
+radius = 0.1
+height = 0.2
+
+[sub_resource type="SphereMesh" id="SphereMesh_h2fsi"]
+material = ExtResource("1_2an3b")
+radius = 0.15
+height = 0.3
+
+[sub_resource type="SphereMesh" id="SphereMesh_ka5ae"]
+material = ExtResource("1_2an3b")
+radius = 0.2
+height = 0.4
+
+[sub_resource type="SphereMesh" id="SphereMesh_4fw5j"]
+material = ExtResource("1_2an3b")
+radius = 0.83
+height = 1.14
+
+[sub_resource type="SphereMesh" id="SphereMesh_wgiaq"]
+material = ExtResource("1_2an3b")
+radius = 0.45
+height = 0.76
+
+[node name="thought_bubble" type="Node3D"]
+transform = Transform3D(0.264, 0, 0, 0, 0.264, 0, 0, 0, 0.264, 0, 0, 0)
+script = ExtResource("1_3js7x")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_uvv6b")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22058547, 0.27031422, 0)
+mesh = SubResource("SphereMesh_h2fsi")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43449688, 0.69347334, 0)
+mesh = SubResource("SphereMesh_ka5ae")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4398486, 1.6128522, -0.16665125)
+mesh = SubResource("SphereMesh_4fw5j")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.51320904, -0.016771317, 0.16665125)
+mesh = SubResource("SphereMesh_wgiaq")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3169276, 0.15999031, 0.16665125)
+mesh = SubResource("SphereMesh_wgiaq")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3169276, -0.16372955, 0.16665125)
+mesh = SubResource("SphereMesh_wgiaq")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.038240016, -0.049131393, 0.16665125)
+mesh = SubResource("SphereMesh_wgiaq")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.038240016, 0.21928322, 0.16665125)
+mesh = SubResource("SphereMesh_wgiaq")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.30100912, 0.15712392, 0.16665125)
+mesh = SubResource("SphereMesh_wgiaq")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.30100912, -0.042705297, 0.16665125)
+mesh = SubResource("SphereMesh_wgiaq")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.30100912, -0.13436484, 0.16665125)
+mesh = SubResource("SphereMesh_wgiaq")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.54245335, -0.020600796, 0.16665125)
+mesh = SubResource("SphereMesh_wgiaq")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0116145015, -0.22724962, 0.16665125)
+mesh = SubResource("SphereMesh_wgiaq")
+skeleton = NodePath("../..")

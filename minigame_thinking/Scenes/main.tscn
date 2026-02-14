@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx0xcunxpubpj"]
+
+[ext_resource type="PackedScene" uid="uid://cw2me1fyf2g2q" path="res://minigame_thinking/Scenes/thought_bubble.tscn" id="1_jjgbg"]
+
+[node name="main" type="Node3D"]
+
+[node name="thought_bubble" parent="." instance=ExtResource("1_jjgbg")]
