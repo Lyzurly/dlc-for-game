@@ -12,13 +12,10 @@ const _MINIGAME_SCENE_PATH: String = \
 ## Keys are functions on the parent project. Values are arrays of those functions parameters
 var _callback_string_on_creation: Dictionary[String,Array] = {
 	"_assign_3D_minigame_pos": [
-		_MINIGAME_DIRECTORY_NAME,
-		]
-	}
+		_MINIGAME_DIRECTORY_NAME,]}
 
 var _minigame_data: Dictionary[String,Dictionary] = {
-	"callback_data_on_creation": _callback_string_on_creation
-	}
+	"callback_data_on_creation": _callback_string_on_creation}
 
 func get_minigame_scene_path() -> String:
 	return _MINIGAME_SCENE_PATH
