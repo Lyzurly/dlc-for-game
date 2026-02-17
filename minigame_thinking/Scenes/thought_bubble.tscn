@@ -44,7 +44,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43449688, 0.69347334, 0)
 mesh = SubResource("SphereMesh_ka5ae")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4398486, 1.6128522, -0.16665125)
+transform = Transform3D(1.2839998, 0, 0, 0, 1.2839998, 0, 0, 0, 1.2839998, 0.7106637, 1.584619, -0.56744933)
 mesh = SubResource("SphereMesh_4fw5j")
 
 [node name="MeshInstance3D14" type="MeshInstance3D" parent="MeshInstance3D4"]
@@ -96,3 +96,12 @@ skeleton = NodePath("../..")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0116145015, -0.22724962, 0.16665125)
 mesh = SubResource("SphereMesh_wgiaq")
 skeleton = NodePath("../..")
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4143653, 1.7073694, 0.6637607)
+billboard = 1
+text = "Godot
+P O N D E R"
+font_size = 58
+outline_size = 72
+line_spacing = 5.684
