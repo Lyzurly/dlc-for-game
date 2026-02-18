@@ -1,7 +1,4 @@
-class_name MinigameThinking extends Node
-static var ref: MinigameThinking
-func _init() -> void:
-	ref = self
+extends Node
 	
 const _MINIGAME_DIRECTORY_NAME: String = "minigame_thinking"
 const _MINIGAME_RES_DIRECTORY: String = \
